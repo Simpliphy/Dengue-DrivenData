@@ -68,7 +68,7 @@ def find_best_params_RandomForest(X_train, y_train, X_val, y_val, param1_list, p
 
             regressor = RandomForestRegressor(n_estimators=param1,
                                               max_depth=param2,
-                                              criterion='mae',
+                                              criterion='mse',
                                               random_state=0,
                                               warm_start = True,
                                               n_jobs=8)
